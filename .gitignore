@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Create .gitignore file using PowerShell
 @"
 # Python
@@ -46,3 +47,38 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 "@ | Out-File -FilePath .gitignore -Encoding utf8
+=======
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
+.venv/
+ENV/
+
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project specific
+data/*.pdf
+*.log
+*.pkl
+*.faiss
+
+# Environment variables
+.env
+>>>>>>> 951aa9ade50f4641f91bcc6c951681eef93dc5b0
