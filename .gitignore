@@ -1,0 +1,48 @@
+# Create .gitignore file using PowerShell
+@"
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# API Keys and secrets
+*.env
+*.key
+*.pem
+gsk_*  # This prevents accidentally committing API keys
+
+# Local files
+*.log
+*.db
+*.sqlite
+.DS_Store
+
+# Uploaded files
+uploads/
+temp/
+
+# Vector store cache
+*.faiss
+*.npy
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+"@ | Out-File -FilePath .gitignore -Encoding utf8
